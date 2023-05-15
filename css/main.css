@@ -15,6 +15,10 @@ ul {
     z-index: 999;
 }
 
+.header span {
+    font-size: 40px;
+}
+
 nav {
     position: fixed;
     top: 50%;
@@ -38,13 +42,15 @@ nav li a::after {
     top: 15px;
     right: 0;
     width: 30px;
-    height: 1px;
+    height: 3px;
     background: #333;
     transition: 0.5s;
 }
 
 nav li.on a::after {
     width: 100px;
+    height: 3px;
+    background: tomato;
 }
 
 .section figure {
@@ -54,7 +60,7 @@ nav li.on a::after {
     margin: 0 auto 30px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 20px solid rgba(0, 0, 0, 0.2);
+    border: 10px solid rgba(0, 0, 0, 0.2);
 
     transform: translate(0, 100px);
     opacity: 0;
@@ -64,17 +70,17 @@ nav li.on a::after {
 .section.on figure::after {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 20px;
     width: 40px;
-    height: 20px;
-    background: green;
-    border-radius: 20px 0;
-    transform: rotate(-25deg);
+    height: 40px;
+    background: red;
+    border-radius: 0 50%;
+    transform: rotate(90deg);
 }
 
 .section.on figure {
-    border-radius: 10%;
+    border-radius: 20%;
     transform: translate(0, 0);
     opacity: 01;
     transition: 1s 1.5s;
@@ -110,4 +116,10 @@ nav li.on a::after {
     text-align: center;
     opacity: 1;
     transform: translate(0, 0);
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }

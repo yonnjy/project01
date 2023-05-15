@@ -4,7 +4,7 @@ $(function () {
     // $('h1').hide();
     //  var => const, let
     const option = {
-        anchors: ['01', '02', '03'],
+        anchors: ['01', '02', '03,', '04', '05'],
         afterRender: function () {
             setTimeout(function () { $('.section').eq(0).addClass('on') });
         },
