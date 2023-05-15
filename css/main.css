@@ -64,7 +64,7 @@ nav li.on a::after {
 
     transform: translate(0, 100px);
     opacity: 0;
-    transition: 0.5s 1s;
+    transition: 1s 1s;
 }
 
 .section.on figure::after {
@@ -83,7 +83,7 @@ nav li.on a::after {
     border-radius: 20%;
     transform: translate(0, 0);
     opacity: 01;
-    transition: 1s 1.5s;
+    transition: 0.5s 0.5s;
 }
 
 .section figure img {
@@ -94,7 +94,7 @@ nav li.on a::after {
     text-align: center;
     opacity: 0;
     transform: translate(100px, 0);
-    transition: 0.5s 1s;
+    transition: 1.5s 1.5s;
 }
 
 /*투명하고 약간 옆쪽에 있다가 .on붙으면 원위치로 와라*/
@@ -108,7 +108,7 @@ nav li.on a::after {
     text-align: center;
     opacity: 0;
     transform: translate(-100px, 0);
-    transition: 0.5s 1.5s;
+    transition: 1s 1.8s;
 }
 
 /*투명하고 약간 옆쪽에 있다가 .on붙으면 원위치로 와라*/
